@@ -8,7 +8,7 @@ O projeto também está pré-configurado para atender a diversos cenários comun
 
 A organização do projeto foi baseada em **features**. Cada funcionalidade (como Player, Coin, Score, etc.) possui sua própria estrutura interna, permitindo maior modularidade e independência.
 
-Além disso, foi utilizada a estratégia de **centralização de dados com Scriptable Objects**, com foco facilitar o trabalho dos game designers da equipe.
+Além disso, foi utilizada a estratégia de **centralização de dados com Scriptable Objects**, visando facilitar o trabalho dos game designers da equipe.
 
 ## Organização Interna
 
