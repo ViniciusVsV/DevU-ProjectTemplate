@@ -1,40 +1,23 @@
-# Protótipo de Arquitetura por Features
+# Projeto Template DevU
 
-Este projeto apresenta um exemplo de montagem de um protótipo seguindo a arquitetura proposta durante as aulas da área de programação, no ano 2026, no projeto DevU da Faculade Federal de Itajubá (UNIFEI).
+![Template](https://img.shields.io/badge/Template-Unity-purple) ![UNIFEI](https://img.shields.io/badge/UNIFEI-DevU-teal)
 
-O projeto também está pré-configurado para atender a diversos cenários comuns no ambiente da DevU, podendo ser reutilizado como um template inicial para novos projetos.
+Este repositório é um template de projeto na Unity desenvolvido para o projeto de extensão **DevU** da Universidade Federal de Itajubá (UNIFEI). Ele foi pré-configurado para atender a cenários comuns no ambiente da DevU e conta com funcionalidades já implementadas, podendo ser reutilizado como ponto de partida para novos projetos.
+
+---
 
 ## Estrutura do Projeto
 
-A organização do projeto foi baseada em **features**. Cada funcionalidade (como Player, Coin, Score, etc.) possui sua própria estrutura interna, permitindo maior modularidade e independência.
+O projeto adota uma arquitetura baseada em **features**, proposta durante as aulas da área de programação no ano de 2026. Nessa organização, cada funcionalidade do jogo possui sua própria pasta com estrutura interna independente, o que favorece a modularidade e facilita a manutenção do código.
 
-Além disso, foi utilizada a estratégia de **centralização de dados com Scriptable Objects**, visando facilitar o trabalho dos game designers da equipe.
+Além disso, o projeto utiliza a estratégia de **centralização de dados com Scriptable Objects**: todos os parâmetros de uma funcionalidade são concentrados em um único local, tornando o balanceamento do jogo mais simples e organizado.
 
-## Organização Interna
+---
 
-Para servir como exemplo, cada feature foi organizada de uma forma diferente, podendo variar no nível de complexidade e modularização. 
+## Usando o Template
 
-Features mais complexas, como o Player, apresentam uma estrutura mais robusta, enquanto features mais simples são menos organizadas internamente. O foco do modelo não é uma organização interna padronizada.
+Este repositório está configurado como um **repositório template** do GitHub, o que permite criar novos repositórios a partir dele com facilidade.
 
-## Comunicação entre Features
-
-A comunicação entre diferentes seções do projeto pode ser feita de duas formas:
-
-### 1. Scripts de Cola (Recomendado)
-
-São scripts responsáveis por conectar duas features sem que elas dependam diretamente uma da outra.
-
-Exemplo:
-- `CoinScoreGlue.cs`: conecta as features de **Coin** e **Score**
-
-Nesse script existe uma referência direta ao sistema de pontuação, o que é inevitável. A comunicação com as moedas, porém, é feita via **eventos em C#**, reduzindo o acoplamento.  
-
-### 2. Referência Direta (Não recomendado)
-
-Uma feature acessa diretamente a outra. Pode ser utilizada mas não é recomendado, pois quebra a independência das features, aumenta o acoplamento e dificulta manutenção e reutilização.
-
-## Namespaces
-
-Um recurso bastante utilizado no exemplo e que não foi explicado em aula. Namespaces são utilizados para organizar e agrupar classes relacionadas dentro do projeto, evitando conflitos de nomes e melhorando a legibilidade do código. 
-
-Eles funcionam como uma forma de separar logicamente as diferentes partes do sistema, sendo especialmente úteis em projetos organizados por features.
+1. Acesse o repositório e clique no botão **"Use this template"**
+2. Selecione **"Create a new repository"** e configure conforme desejado
+3. Pronto — o novo repositório já virá com todos os arquivos do template, pronto para ser utilizado
