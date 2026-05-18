@@ -51,14 +51,13 @@ namespace AudioSystem
             {
                 usedSource.clip = music;
                 usedSource.loop = true;
-
             }
         }
 
         public void PlaySFX(AudioSource audioSource, AudioClip sfx)
         {
             AudioSource usedSource;
-            usedSource = audioSource ? audioSource : musicSource;
+            usedSource = audioSource ? audioSource : sfxSource;
 
             usedSource.PlayOneShot(sfx);
         }
