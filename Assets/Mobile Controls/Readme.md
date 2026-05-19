@@ -22,7 +22,7 @@ Esse canvas contém botões com os componentes `OnScreenButton` ou `OnScreenStic
 - **TMPro** instalado no projeto.
 - Inputs do jogador mapeados de acordo com o Input System.
 
-> Os botões padrão incluídos (`Move` e `Jump`) utilizam o mesmo caminho de mapeamento do gamepad.
+> Os botões padrão incluídos (`Move`, `Jump` e `Pause`) utilizam o mesmo caminho de mapeamento do gamepad.
 
 ## Configuração
 
