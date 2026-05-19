@@ -13,8 +13,6 @@ Este repositório é um template de projeto na Unity desenvolvido para o projeto
 
 💡 O objetivo deste template é atuar como uma base reutilizável para novos projetos, acelerando o desenvolvimento dos jogos e mantendo consistência entre projetos.
 
----
-
 ## 🧩 Estrutura do Projeto 
 
 O projeto adota uma arquitetura **baseada em features**, proposta durante as aulas da área de programação no ano de 2026. Nessa organização, cada funcionalidade do jogo possui sua própria pasta com estrutura interna independente, o que favorece a modularidade e facilita a manutenção do código. 
