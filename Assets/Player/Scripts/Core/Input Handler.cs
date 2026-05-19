@@ -21,7 +21,7 @@ namespace Player
         public bool isPaused;
         public bool isOnController;
 
-        public static event Action OnPausePressed;
+        public static event Action<bool> OnPausePressed;
 
         private void Update()
         {
@@ -89,7 +89,7 @@ namespace Player
                     playerBehaviour.Move(0);
                 }
 
-                OnPausePressed?.Invoke();
+                OnPausePressed?.Invoke(isPaused);
             }
         }
 
