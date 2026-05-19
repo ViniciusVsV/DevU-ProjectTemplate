@@ -1,6 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace MobileControls
 {
@@ -25,7 +23,7 @@ namespace MobileControls
             else
                 Destroy(gameObject);
 
-            canvasObject.SetActive(true);
+            canvasObject.SetActive(false);
         }
 
         private void Start()
@@ -33,7 +31,7 @@ namespace MobileControls
             RuntimePlatform platform = Application.platform;
 
             if (
-                platform == RuntimePlatform.WindowsPlayer ||
+                platform == RuntimePlatform.Android ||
                 platform == RuntimePlatform.IPhonePlayer ||
                 (platform == RuntimePlatform.WebGLPlayer && Application.isMobilePlatform)
             )
