@@ -1,4 +1,4 @@
-# 📱 Mobile Input Adapter
+# 📱 Mobile Controls
 
 Asset para adaptação simples de jogos Unity para plataformas mobile, utilizando o novo **Input System** da Unity.
 
@@ -18,21 +18,27 @@ Esse canvas contém botões com os componentes `OnScreenButton` ou `OnScreenStic
 
 ## Pré-requisitos
 
-- **Input System** da Unity instalado no projeto (novo sistema de input).
+- **Input System** instalado no projeto
 - **TMPro** instalado no projeto.
 - Inputs do jogador mapeados de acordo com o Input System.
 
-> Os botões padrão incluídos (`Move`, `Jump` e `Pause`) utilizam o mesmo caminho de mapeamento do gamepad.
+> Os botões já incluídos no template (`Move`, `Jump` e `Pause`) utilizam o mesmo caminho de mapeamento do gamepad.
 
 ## Configuração
 
 ### `usesStick` (booleana)
 
-No script do sistema, há uma variável chamada `usesStick` que controla o modo de movimentação exibido no mobile:
+No script principal do sistema, `ControlsEnabler`, há uma variável chamada `usesStick` que controla o modo de movimentação exibido no mobile:
 
 | Valor | Comportamento |
 |-------|---------------|
 | `false` (padrão) | Exibe dois botões: **Left** e **Right** |
 | `true` | Exibe um **stick analógico** de movimentação |
 
-**Ative `usesStick`** quando o jogo utilizar movimentação top-down ou qualquer outro esquema que permita movimento livre no plano cartesiano.
+**Ative `usesStick`** quando o jogo utilizar movimentação top-down ou qualquer outro esquema que permita movimento livre no plano cartesiano. Caso contrário, para jogos side-scroller por exemplo, mantenha desativado.
+
+### `PauseHandler`
+
+Script responsável por ocultar os botões mobile quando o menu de pause estiver aberto, evitando sobreposição com a UI de pause. Os botões a serem ocultados são definidos pelo inspetor. 
+
+Para ativá-lo, conecte-o através da função `TogglePause()` a um sistema do jogo que sinalize quando o evento de pause ocorre e se deve ser ativado ou desativado.

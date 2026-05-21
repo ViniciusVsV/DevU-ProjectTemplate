@@ -28,7 +28,6 @@ namespace AudioSystem
             {
                 musicSource.clip = audioData.menuMusic;
                 musicSource.loop = true;
-
             }
         }
 
@@ -38,7 +37,6 @@ namespace AudioSystem
             {
                 musicSource.clip = audioData.gameMusic;
                 musicSource.loop = true;
-
             }
         }
 
