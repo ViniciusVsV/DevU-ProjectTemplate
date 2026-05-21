@@ -5,9 +5,10 @@ namespace MenuSystem
     public class MainMenuController : MonoBehaviour
     {
         [Header("Sections")]
-        [SerializeField] private ConfigSection configSection;
-        [SerializeField] private ControlsSection controlsSection;
-        [SerializeField] private CreditsSection creditsSection;
+        [SerializeField] private BaseSection startSection;
+        [SerializeField] private BaseSection configSection;
+        [SerializeField] private BaseSection controlsSection;
+        [SerializeField] private BaseSection creditsSection;
 
         public void StartNewGame()
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Behaviour : MonoBehaviour
+    public class PlayerBehaviour : MonoBehaviour
     {
         [Header("Data")]
         [SerializeField] private PlayerBehaviourData playerBehaviourData;

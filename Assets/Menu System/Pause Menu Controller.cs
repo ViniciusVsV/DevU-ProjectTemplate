@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace MenuSystem
@@ -10,9 +9,9 @@ namespace MenuSystem
         public static PauseMenuController Instance;
 
         [Header("Sections")]
-        [SerializeField] private PauseSection pauseSection;
-        [SerializeField] private ConfigSection configSection;
-        [SerializeField] private ControlsSection controlsSection;
+        [SerializeField] private BaseSection pauseSection;
+        [SerializeField] private BaseSection configSection;
+        [SerializeField] private BaseSection controlsSection;
 
         [Header("Elements")]
         [SerializeField] private Button configButton;

@@ -8,7 +8,7 @@ namespace Player
     public class InputHandler : MonoBehaviour
     {
         [SerializeField] private PlayerBehaviourData playerBehaviourData;
-        [SerializeField] private Behaviour playerBehaviour;
+        [SerializeField] private PlayerBehaviour playerBehaviour;
 
         private float dashCooldownTimer;
 

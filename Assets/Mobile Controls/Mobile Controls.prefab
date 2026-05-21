@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6354612908523852462}
   - component: {fileID: 3834974580084820909}
+  - component: {fileID: 239289347652826321}
   m_Layer: 0
   m_Name: Mobile Controls
   m_TagString: Untagged
@@ -183,7 +184,22 @@ MonoBehaviour:
   canvasObject: {fileID: 4036675854720068225}
   movementStick: {fileID: 1662248908378409851}
   movementButtons: {fileID: 7867252646712118093}
-  usesStick: 1
+  usesStick: 0
+--- !u!114 &239289347652826321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311047820625007151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6852bf1891fcdde4bac7c84c4144b632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MobileControls.PauseHandler
+  disableableObjects:
+  - {fileID: 3068980920318667798}
+  - {fileID: 5485513922459174067}
 --- !u!1 &1333393358891015448
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -958.8, y: 350.2}
+  m_AnchoredPosition: {x: -865, y: 442.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2490833827834223100
@@ -1121,7 +1137,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: -100
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &6694412323873622039
 MonoBehaviour:
